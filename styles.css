@@ -2,6 +2,17 @@
   font-family: Euclid, sans-serif;
 }
 
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  background-color: #050e25;
+}
+
 .center {
   display: block;
   text-decoration: none;
@@ -13,9 +24,14 @@
 }
 
 #logo {
-  max-width: 125px;
-  max-height: 125px;
+  max-width: 400px;
   margin: 15px auto;
+}
+@media only screen and (max-width: 768px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+  #logo {
+    max-width: 250px;
+  }
 }
 
 #logo img {
@@ -27,6 +43,7 @@
   transition-duration: 200ms;
   opacity: 0;
   visibility: hidden;
+  color: white;
 }
 
 #response-text.active {
@@ -40,7 +57,6 @@
   opacity: 0;
   visibility: hidden;
   background-color: white;
-  border: 1px solid #037dd6;
   font-weight: bold;
   color: #037dd6;
   border-radius: 100px;

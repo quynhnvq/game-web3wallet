@@ -1,3 +1,7 @@
+# dgg-safechain
+
+DGG safe chain to connect mobile wallet to DGG CSs
+
 # Game Web3 Wallet
 
 Unity Wallet. Build iOS, Android and Desktop.
@@ -16,10 +20,10 @@ Link to this site to
 
 ## Verify Login
 
-| Params          | Description           |
-| --------------- | --------------------- |
-| &action=sign    | action to verify user |
-| &message=hello  | message to sign       |
+| Params         | Description           |
+| -------------- | --------------------- |
+| &action=sign   | action to verify user |
+| &message=hello | message to sign       |
 
 example to sign a message: `http://localhost:1234/?action=sign&message=helloworld`
 
